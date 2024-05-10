@@ -2,9 +2,11 @@
 Manage your online reading with this simple library application. 
 
 ## Features
-Browse profile and preselected titles
-Navigate to library page to browse more preselected titles
-Login with AuthO
+- Browse profile and preselected titles
+<br>
+- Navigate to library page to browse more preselected titles
+<br>
+- Login with AuthO
 
 ## Installation
 
