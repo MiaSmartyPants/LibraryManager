@@ -5,7 +5,6 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import ProfileCard from "./components/ProfileCard";
 import SettingsCard from "./components/SettingsCard";
 import BookCard from "./components/BookCard";
-import FancyButton from "./components/ProfileButtons"; // Import FancyButton component
 import "./App.css";
 
 
@@ -19,9 +18,8 @@ import "@fontsource/roboto/700.css";
 const theme = createTheme();
 
 // APP
-export default function Profile() {
+export default function Profile(userData) {
   const [text, setText] = useState("");
-
   const mainUser = {
     // DEFAULT VALUES
     title: "CEO of Apple",
@@ -93,7 +91,7 @@ export default function Profile() {
             />
           </Grid>
           <Grid item xs={12}>
-            <BookCard />
+            <BookCard userBooks={userData.UserData.userBooks}/>
           </Grid>
         </Grid>
       </Grid>

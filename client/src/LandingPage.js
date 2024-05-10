@@ -1,11 +1,11 @@
 import Button from '@mui/material/Button';
 
-const Landing = ({ signIn }) => {
+const Landing = ({ login }) => {
     return (
         <div>
             Sign in to view the rest of this beautiful collection!
             <br />
-            <Button onClick={() => signIn()}>Sign In</Button>
+            <Button onClick={() => login()}>Sign In</Button>
         </div>
     )
 }

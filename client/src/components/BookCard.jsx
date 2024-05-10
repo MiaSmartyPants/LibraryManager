@@ -1,11 +1,11 @@
 import React from 'react';
 import '../App.css';
-import { personalBookData } from '../FetchData';
 
-const BookCard = () => {
+const BookCard = (userBooks) => {
+  console.log(userBooks.userBooks, "kjfnvksj")
   return (
     <div className="card-grid">
-      {personalBookData.map((card, index) => (
+      {userBooks.userBooks.map((card, index) => (
         <div key={index} className="card">
           <img src={card.image} alt={card.title} className="card-image" />
           <div className="card-content">

@@ -8,6 +8,8 @@ import Library from "./Library";
 // import { Provider } from 'react-redux';
 // import {store}  from './store';
 import { createRoot } from "react-dom/client";
+import { Auth0Provider } from '@auth0/auth0-react';
+
 
 // import { BrowserRouter} from "react-router-dom"
 
@@ -18,7 +20,8 @@ createRoot(rootElement);
 
 root.render(
   <Auth0Provider
-
+      domain="dev-mbgapo7i704pprss.us.auth0.com"
+      clientId="QsIZuIAtn3p4K2GtSCSazGJQdRX5YgCT"
       authorizationParams={{
         redirect_uri: window.location.origin
       }}
